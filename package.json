@@ -2,7 +2,7 @@
   "name": "covid-record-react-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://peter9294.github.io",
+  "homepage": "https://peter9294.github.io/covid-cases-table/",
   "dependencies": {
     "-": "0.0.1",
     "@testing-library/jest-dom": "^5.16.1",
