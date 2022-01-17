@@ -1,0 +1,124 @@
+::selection {
+  background-color: rgb(188, 209, 148);
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background: rgb(254, 245, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(254, 245, 255, 1) 0%,
+    rgba(158, 255, 225, 1) 15%,
+    rgba(255, 255, 255, 1) 53%,
+    rgba(224, 255, 163, 1) 87%,
+    rgba(155, 241, 224, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#root {
+  font-family: "Prompt", sans-serif;
+}
+
+header {
+  margin: auto;
+  width: 95%;
+  color: #000000;
+}
+
+.loading-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background: rgb(254, 245, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(254, 245, 255, 1) 0%,
+    rgba(158, 255, 225, 1) 15%,
+    rgba(255, 255, 255, 1) 53%,
+    rgba(224, 255, 163, 1) 87%,
+    rgba(155, 241, 224, 1) 100%
+  );
+}
+.search-container {
+  margin: auto;
+  width: 95%;
+  position: relative;
+  input {
+    font-family: "Prompt", sans-serif;
+    border: 1px solid #3a5a40;
+    padding: 5px 20px 5px 40px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.712);
+    box-shadow: 10px 10px 15px rgba(199, 199, 199, 0.363);
+    &:focus {
+      outline: none;
+    }
+  }
+  span {
+    position: absolute;
+    top: 20%;
+    left: 0.5%;
+  }
+}
+$headerColor: #00a676;
+$rowColor: #e0d0c1d0;
+$buttonColor: #ffffff;
+table {
+  border: none;
+  margin: 40px auto;
+  border-collapse: collapse;
+  width: 95%;
+  box-shadow: 10px 10px 30px rgba(197, 197, 197, 0.74);
+  th {
+    font-weight: 300;
+    border: 1px solid white;
+    padding: 10px 5px;
+    white-space: nowrap;
+    font-size: 0.8rem;
+  }
+  tr {
+    &:nth-child(even) {
+      background-color: $rowColor;
+    }
+    &:nth-child(odd) {
+      background-color: #f7f9f9;
+    }
+  }
+  .table__header {
+    font-weight: 500;
+    padding: 10px 10px;
+    background-color: $headerColor;
+    color: white;
+    font-size: 1.3rem;
+  }
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    button {
+      background-color: $buttonColor;
+      font-size: 1.2rem;
+      width: 40px;
+      border: none;
+      border-radius: 30px;
+      opacity: 0.8;
+      transition: 200ms ease-out;
+      cursor: pointer;
+      &:hover {
+        opacity: 1;
+      }
+      &:active {
+        transform: scale(0.9);
+      }
+    }
+  }
+}
