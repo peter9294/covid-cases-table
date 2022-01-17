@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/covid-cases-table/static/css/main.c7058b69.css",
+    "main.js": "/covid-cases-table/static/js/main.893ebc47.js",
+    "index.html": "/covid-cases-table/index.html",
+    "main.c7058b69.css.map": "/covid-cases-table/static/css/main.c7058b69.css.map",
+    "main.893ebc47.js.map": "/covid-cases-table/static/js/main.893ebc47.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c7058b69.css",
+    "static/js/main.893ebc47.js"
+  ]
+}
